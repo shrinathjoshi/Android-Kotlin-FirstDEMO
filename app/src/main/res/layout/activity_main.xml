@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.shrinath.dinnerorder.MainActivity">
+
+    <TextView
+        android:id="@+id/selectedFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Chinese"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <Button
+        android:id="@+id/btnDecide"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Decide"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etAddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_bold"
+        android:hint="Add Food"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedFoodText" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Add Food"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddFood" />
+
+</android.support.constraint.ConstraintLayout>
